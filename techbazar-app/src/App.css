@@ -1,14 +1,14 @@
 .greenBarTop{
   display: flex;
   justify-content: space-between;
-  padding: 4px 100px 4px 100px ;
+  padding: 4px 80px 4px 80px ;
   box-sizing: border-box;
   background-color: #00472F;
   color: #fff;
 }
 
 .Nav1{
-  padding: 16px 100px 16px 100px;
+  padding: 16px 80px 16px 80px;
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid rgb(230, 230, 230);
@@ -20,7 +20,7 @@
   z-index: 10;
 }
 .Nav2{
-  padding: 16px 100px 16px 100px;
+  padding: 16px 80px 16px 80px;
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid rgb(230, 230, 230);
@@ -41,7 +41,7 @@
 .NavLinkDiv{
   display: flex;
   justify-content: space-between;
-  width: 32%;
+  width: 380px;
 }
 
 .NavLink{
@@ -66,4 +66,85 @@
   align-items: center;
   width: 15%;
   height: 36px;
+}
+
+.inputBox{
+  background-color: rgb(238, 238, 238);
+  height: 32px;
+  padding: 0px 20px 0px 0px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  
+}
+.inputBox>input{
+  height: 100%;
+  padding-left: 20px;
+  background-color: rgb(238, 238, 238);
+  margin-right: 20px;
+  box-sizing: border-box;
+  width: 180px;
+  border-radius: 20px;
+}
+.Account{
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+  width: 180px;
+  font-weight: 600;
+}
+.AccountLinks:hover{
+  text-decoration: underline;
+   color: #007850;
+}
+.footerMainDiv{
+  margin: 100px 80px 0px 80px;
+  border-top:2px solid rgb(232, 232, 232);
+  padding: 45px 0px 0px 0px;
+}
+.mainFooter{
+  display: flex;
+  justify-content: space-between;
+}
+#imgFooter{
+  width: 140px;
+}
+
+.smallImageBox{
+  width:65px;
+  height: 38px;
+  border: 1px solid rgb(228, 228, 228);
+  border-radius: 6px;
+}
+.smallImageBox>img{
+  width:94%;
+  margin: auto;
+  height: 96%;
+}
+
+.footerHeadings{
+  font-weight: 600;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+.linkDivs{
+  width: 12%;
+}
+.linkDivs>a{
+display: block;
+margin-bottom: 6px;
+font-size: 14px;
+}
+.linkDivs>a:hover{
+  text-decoration: underline;
+  color: #007850
+}
+
+.footerBottom{
+  display: flex;
+  font-size: 14px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0px 20px 0px;
+  margin-top: 30px;
+  border-top:2px solid rgb(232, 232, 232);
 }

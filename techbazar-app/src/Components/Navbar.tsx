@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import '../App.css';
 import { FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import { faPhone,faChevronDown,faMagnifyingGlass} from '@fortawesome/free-solid-svg-icons';
+import { faPhone,faChevronDown,faMagnifyingGlass,faUser,faCartShopping} from '@fortawesome/free-solid-svg-icons';
 import { } from '@fortawesome/free-brands-svg-icons'
 import { Link,NavLink } from 'react-router-dom';
 import Logo from "../Images/Logo.png"
@@ -31,12 +31,12 @@ console.log(isAtTop)
     <div>
         <div className='greenBarTop'>
             <div><FontAwesomeIcon icon={faPhone} size="sm" /> +0138748343</div>
-            <div style={{display:"flex", justifyContent:"space-between", width:"24%", alignItems:"center"}}>
+            <div style={{display:"flex", justifyContent:"space-between", width:"280px", alignItems:"center"}}>
                 <div>50% off on selected item </div>
                 <div>|</div>
-                <Link to="" style={{color:"#fff"}}>Shop Now</Link>
+                <Link to="/products" style={{color:"#fff", textDecoration:"underline"}}>Shop Now</Link>
             </div>
-            <div style={{display:"flex", justifyContent:"space-between", width:"14%", alignItems:"center"}}>
+            <div style={{display:"flex", justifyContent:"space-between", width:"150px", alignItems:"center"}}>
                 <div >Eng <FontAwesomeIcon icon={faChevronDown} size="sm" /></div>
                 <div>Location <FontAwesomeIcon icon={faChevronDown} size="sm" /></div>
             </div>
@@ -52,6 +52,19 @@ console.log(isAtTop)
               <NavLink className="NavLink" to="">Delivery</NavLink>
             </div>
             
+            <div className='inputBox'>
+            <input type="text" placeholder='Search Products' />
+            <FontAwesomeIcon icon={faMagnifyingGlass} size="sm" style={{color: "#808080",}} />
+            </div>
+           
+           <div className='Account'>
+            <div>
+            <FontAwesomeIcon icon={faUser} size="sm"/> <Link to="/login" className='AccountLinks'>Account</Link>
+            </div>
+            <div>
+            <FontAwesomeIcon icon={faCartShopping} size="sm" /> <Link to="/cart" className='AccountLinks'>Cart</Link>
+            </div>
+           </div>
         </div>
     </div>
   )
