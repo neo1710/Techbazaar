@@ -4,10 +4,7 @@ import { ProductPage } from './ProductPage'
 import { Login } from './LoginPage'
 import { CartPage } from './CartPage'
 
-export {Routes,Route} from 'react-router-dom'
-
 export const MainRoutes=()=>{
-
    return (
     <Routes>
    <Route path='/' element={<HomePage/>}/>
@@ -17,3 +14,4 @@ export const MainRoutes=()=>{
     </Routes>
    ) 
 }
+

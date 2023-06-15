@@ -1,38 +1,69 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.greenBarTop{
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  padding: 4px 100px 4px 100px ;
+  box-sizing: border-box;
+  background-color: #00472F;
+  color: #fff;
+}
+
+.Nav1{
+  padding: 16px 100px 16px 100px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgb(230, 230, 230);
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  box-sizing: border-box;
+  position: fixed;
+  width: 100%;
+  background-color: #fff;
+  z-index: 10;
+}
+.Nav2{
+  padding: 16px 100px 16px 100px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgb(230, 230, 230);
+  align-items: center;
+  box-sizing: border-box;
+  position: fixed;
+  width: 100%;
+  background-color: #fff;
+  z-index: 10;
+  top:0
+}
+.Nav1 img{
+  width: 140px;
+}
+.Nav2 img{
+  width: 140px;
+}
+.NavLinkDiv{
+  display: flex;
+  justify-content: space-between;
+  width: 32%;
 }
 
-.App-link {
-  color: #61dafb;
+.NavLink{
+  color: #000000;
+  font-weight: 600;
+  font-size: 18px;
+  text-decoration: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.NavLink:hover{
+   text-decoration: underline;
+   color: #007850;
+}
+
+.searchBar{
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 16px 0px 16px;
+  box-sizing: border-box;
+  border-radius:30px;
+  background-color: rgb(236, 236, 236);
+  align-items: center;
+  width: 15%;
+  height: 36px;
 }
