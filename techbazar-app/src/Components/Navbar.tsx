@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import '../App.css';
 import { FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import { faPhone,faChevronDown,faMagnifyingGlass} from '@fortawesome/free-solid-svg-icons';
-import { } from '@fortawesome/free-brands-svg-icons'
+import { } from '@fortawesome/free-brands-svg-icons';
 import { Link,NavLink } from 'react-router-dom';
 import Logo from "../Images/Logo.png"
 

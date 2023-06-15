@@ -3,6 +3,7 @@ import { HomePage } from './Homepage'
 import { ProductPage } from './ProductPage'
 import { Login } from './LoginPage'
 import { CartPage } from './CartPage'
+import { Signup } from './SignUpPage'
 
 export const MainRoutes=()=>{
    return (
@@ -10,6 +11,7 @@ export const MainRoutes=()=>{
    <Route path='/' element={<HomePage/>}/>
    <Route path='/products' element={<ProductPage/>}/>
    <Route path='/login' element={<Login/>}/>
+   <Route path='/signup' element={<Signup/>} />
    <Route path='/cart' element={<CartPage/>}/>
     </Routes>
    ) 
