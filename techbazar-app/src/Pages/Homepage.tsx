@@ -232,7 +232,7 @@ export const HomePage = () => {
         </div>
       </div>
 
-      <div style={{ margin: "60px 80px 0px 80px " }}>
+      <div style={{ margin: "60px 80px 0px 80px" }}>
         <Heading fontSize="24px" margin={"0px 0px 36px 0px"}>
           Today's Best Deals For You
         </Heading>
@@ -287,6 +287,90 @@ export const HomePage = () => {
           />
         </div>
       </div>
+
+      <div style={{ margin: "60px 80px 0px 80px " }}>
+      <Heading fontSize="24px" margin={"0px 0px 36px 0px"}>
+          Choose By Brand
+        </Heading>
+
+        <div style={{display:"grid", gap:"22px", gridTemplateColumns:"repeat(4, 1fr)"}}>
+            <div className="brandCard">
+              <div style={{width:"50px", borderRadius:"50px", marginRight:"20px"}}>
+                <img style={{width:"100%", objectFit:"cover", borderRadius:"50px"}} src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSF0A4daktaFO2YPy_PXJ-gQ9ZBWCePNib_NFyfhRk24g&usqp=CAU&ec=48665699" alt="image" />
+              </div>
+              <div>
+                <Heading fontSize={"18px"} fontWeight={"600"}>Steples</Heading>
+                <Text>Delivery with in 24 hrs</Text>
+              </div>
+            </div>
+            <div className="brandCard">
+              <div style={{width:"50px", borderRadius:"50px", marginRight:"20px"}}>
+                <img style={{width:"100%", objectFit:"cover", borderRadius:"50px"}} src="https://assets.simpleviewinc.com/simpleview/image/upload/crm/boulder/sprouts-logo-e4e8d80f5056a36_e4e8d8cf-5056-a36a-071fb0c1945e7c79.png" alt="image" />
+              </div>
+              <div>
+                <Heading fontSize={"18px"} fontWeight={"600"}>Spouts</Heading>
+                <Text>Delivery with in 24 hrs</Text>
+              </div>
+            </div>
+            <div className="brandCard">
+              <div style={{width:"50px", borderRadius:"50px", marginRight:"20px"}}>
+                <img style={{width:"100%", objectFit:"cover", borderRadius:"50px"}} src="https://seeklogo.com/images/G/grocery-outlet-logo-D3B06DC84B-seeklogo.com.png" alt="image" />
+              </div>
+              <div>
+                <Heading fontSize={"18px"} fontWeight={"600"}>Grosery Outlet</Heading>
+                <Text>Delivery with in 24 hrs</Text>
+              </div>
+            </div>
+            <div className="brandCard">
+              <div style={{width:"50px", borderRadius:"50px", marginRight:"20px"}}>
+                <img style={{width:"100%", objectFit:"cover", borderRadius:"50px"}} src="https://media.licdn.com/dms/image/C560BAQEqg-5hBXz4lw/company-logo_200_200/0/1595613376638?e=2147483647&v=beta&t=SpoLuHLjwNB3EpAlls98d4E3x9_rl4sdUHsbJRbYt4Q" alt="image" />
+              </div>
+              <div>
+                <Heading fontSize={"18px"} fontWeight={"600"}>Mollie stones</Heading>
+                <Text>Delivery with in 24 hrs</Text>
+              </div>
+            </div>
+            <div className="brandCard">
+              <div style={{width:"50px", borderRadius:"50px", marginRight:"20px"}}>
+                <img style={{width:"100%", objectFit:"cover", borderRadius:"50px"}} src="https://s3.amazonaws.com/media.locally.net/logo-270x270/2_2016-02-22-10-57-06.gif" alt="image" />
+              </div>
+              <div>
+                <Heading fontSize={"18px"} fontWeight={"600"}>Sports Basement</Heading>
+                <Text>Delivery with in 24 hrs</Text>
+              </div>
+            </div>
+            <div className="brandCard">
+              <div style={{width:"50px", borderRadius:"50px", marginRight:"20px"}}>
+                <img style={{width:"100%", objectFit:"cover", borderRadius:"50px"}} src="https://static.ambitionbox.com/assets/v2/images/rs:fit:200:200:false:false/bG9jYWw6Ly8vbG9nb3Mvb3JpZ2luYWxzL3RoZS1jb250YWluZXItc3RvcmUuanBn.webp" alt="image" />
+              </div>
+              <div>
+                <Heading fontSize={"18px"} fontWeight={"600"}>Container Store</Heading>
+                <Text>Delivery with in 24 hrs</Text>
+              </div>
+            </div>
+            <div className="brandCard">
+              <div style={{width:"50px", borderRadius:"50px", marginRight:"20px"}}>
+                <img style={{width:"100%", objectFit:"cover", borderRadius:"50px"}} src="https://corporate.target.com/_media/TargetCorp/Press/B-roll%20and%20Press%20Materials/Logos/Target_Bullseye-Logo_Red.jpg?preset=640w" alt="image" />
+              </div>
+              <div>
+                <Heading fontSize={"18px"} fontWeight={"600"}>Target</Heading>
+                <Text>Delivery with in 24 hrs</Text>
+              </div>
+            </div>
+            <div className="brandCard">
+              <div style={{width:"50px", borderRadius:"50px", marginRight:"20px"}}>
+                <img style={{width:"100%", objectFit:"cover", borderRadius:"50px"}} src="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_170,w_170,f_auto,b_white,q_auto:eco,dpr_1/e4fcf7xwnbuzevlchapd" alt="image" />
+              </div>
+              <div>
+                <Heading fontSize={"18px"} fontWeight={"600"}>Bevmo!</Heading>
+                <Text>Delivery with in 24 hrs</Text>
+              </div>
+            </div>
+        </div>
+      </div>
+
+
+
       <Footer />
     </div>
   );
