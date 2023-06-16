@@ -136,7 +136,8 @@ font-size: 14px;
 }
 .linkDivs>a:hover{
   text-decoration: underline;
-  color: #007850
+  color: #007850 ;
+  font-weight: 600;
 }
 
 .footerBottom{
@@ -147,4 +148,16 @@ font-size: 14px;
   padding: 20px 0px 20px 0px;
   margin-top: 30px;
   border-top:2px solid rgb(232, 232, 232);
+}
+
+.bgPoster{
+  background-image: url('./Images/background.svg');
+  height: 600px;
+  display: flex;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 0px 140px 0px 140px;
+  box-sizing: border-box;
 }
