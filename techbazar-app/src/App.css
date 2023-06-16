@@ -277,3 +277,10 @@
 .brandCard:hover{
   border: 1px solid #007850;
 }
+
+.offerCards{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}

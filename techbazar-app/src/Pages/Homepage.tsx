@@ -2,14 +2,14 @@ import { Button, Heading, Text } from "@chakra-ui/react";
 import Footer from "../Components/Footer";
 import Navbar from "../Components/Navbar";
 import HomePageProductsCard from "../Components/HomePageProductsCard";
-import speaker from "../Images/speaker.svg"
-import bag from "../Images/bag.svg"
-import headphoneBuds from "../Images/headphoneBuds.svg"
-import watch from "../Images/watch.svg"
-import camera from "../Images/camera.svg"
-import pinkHeadphone from "../Images/pinkHeadphone.svg"
-import blackHeadphone from "../Images/blackHeadphone.svg"
-import bottol from "../Images/bottol.svg"
+import speaker from "../Images/speaker.svg";
+import bag from "../Images/bag.svg";
+import headphoneBuds from "../Images/headphoneBuds.svg";
+import watch from "../Images/watch.svg";
+import camera from "../Images/camera.svg";
+import pinkHeadphone from "../Images/pinkHeadphone.svg";
+import blackHeadphone from "../Images/blackHeadphone.svg";
+import bottol from "../Images/bottol.svg";
 
 export const HomePage = () => {
   return (
@@ -238,139 +238,316 @@ export const HomePage = () => {
         </Heading>
         <div className="productCards">
           <HomePageProductsCard
-            image= {speaker}
+            image={speaker}
             price="$20"
-            text= "Pink Gold Strap, Free Size"
+            text="Pink Gold Strap, Free Size"
             title="HomePod Mini"
           />
           <HomePageProductsCard
-            image= {watch}
+            image={watch}
             price="$20"
-            text= "Pink Gold Strap, Free Size"
+            text="Pink Gold Strap, Free Size"
             title="Smart Watch"
           />
           <HomePageProductsCard
-            image= {pinkHeadphone}
+            image={pinkHeadphone}
             price="$52.30"
-            text= "Pink Gold Strap, Free Size"
+            text="Pink Gold Strap, Free Size"
             title="AirPods Max"
           />
           <HomePageProductsCard
-            image= {bottol}
+            image={bottol}
             price="$10"
-            text= "Pink Gold Strap, Free Size"
+            text="Pink Gold Strap, Free Size"
             title="Pendletone Water Bottol"
           />
           <HomePageProductsCard
-            image= {camera}
+            image={camera}
             price="$61"
-            text= "Pink Gold Strap, Free Size"
+            text="Pink Gold Strap, Free Size"
             title="Pink Camera"
           />
           <HomePageProductsCard
-            image= {bag}
+            image={bag}
             price="$11"
-            text= "Pink Gold Strap, Free Size"
+            text="Pink Gold Strap, Free Size"
             title="Hand Bags Pink"
           />
           <HomePageProductsCard
-            image= {blackHeadphone}
+            image={blackHeadphone}
             price="$9"
-            text= "Pink Gold Strap, Free Size"
+            text="Pink Gold Strap, Free Size"
             title="Black & Blue Headphone"
           />
           <HomePageProductsCard
-            image= {headphoneBuds}
+            image={headphoneBuds}
             price="$20"
-            text= "Pink Gold Strap, Free Size"
+            text="Pink Gold Strap, Free Size"
             title="Black Headphone Buds"
           />
         </div>
       </div>
 
       <div style={{ margin: "60px 80px 0px 80px " }}>
-      <Heading fontSize="24px" margin={"0px 0px 36px 0px"}>
+        <Heading fontSize="24px" margin={"0px 0px 36px 0px"}>
           Choose By Brand
         </Heading>
 
-        <div style={{display:"grid", gap:"22px", gridTemplateColumns:"repeat(4, 1fr)"}}>
-            <div className="brandCard">
-              <div style={{width:"50px", borderRadius:"50px", marginRight:"20px"}}>
-                <img style={{width:"100%", objectFit:"cover", borderRadius:"50px"}} src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSF0A4daktaFO2YPy_PXJ-gQ9ZBWCePNib_NFyfhRk24g&usqp=CAU&ec=48665699" alt="image" />
-              </div>
-              <div>
-                <Heading fontSize={"18px"} fontWeight={"600"}>Steples</Heading>
-                <Text>Delivery with in 24 hrs</Text>
-              </div>
+        <div
+          style={{
+            display: "grid",
+            gap: "22px",
+            gridTemplateColumns: "repeat(4, 1fr)",
+          }}
+        >
+          <div className="brandCard">
+            <div
+              style={{
+                width: "50px",
+                borderRadius: "50px",
+                marginRight: "20px",
+              }}
+            >
+              <img
+                style={{
+                  width: "100%",
+                  objectFit: "cover",
+                  borderRadius: "50px",
+                }}
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSF0A4daktaFO2YPy_PXJ-gQ9ZBWCePNib_NFyfhRk24g&usqp=CAU&ec=48665699"
+                alt="image"
+              />
             </div>
-            <div className="brandCard">
-              <div style={{width:"50px", borderRadius:"50px", marginRight:"20px"}}>
-                <img style={{width:"100%", objectFit:"cover", borderRadius:"50px"}} src="https://assets.simpleviewinc.com/simpleview/image/upload/crm/boulder/sprouts-logo-e4e8d80f5056a36_e4e8d8cf-5056-a36a-071fb0c1945e7c79.png" alt="image" />
-              </div>
-              <div>
-                <Heading fontSize={"18px"} fontWeight={"600"}>Spouts</Heading>
-                <Text>Delivery with in 24 hrs</Text>
-              </div>
+            <div>
+              <Heading fontSize={"18px"} fontWeight={"600"}>
+                Steples
+              </Heading>
+              <Text>Delivery with in 24 hrs</Text>
             </div>
-            <div className="brandCard">
-              <div style={{width:"50px", borderRadius:"50px", marginRight:"20px"}}>
-                <img style={{width:"100%", objectFit:"cover", borderRadius:"50px"}} src="https://seeklogo.com/images/G/grocery-outlet-logo-D3B06DC84B-seeklogo.com.png" alt="image" />
-              </div>
-              <div>
-                <Heading fontSize={"18px"} fontWeight={"600"}>Grosery Outlet</Heading>
-                <Text>Delivery with in 24 hrs</Text>
-              </div>
+          </div>
+          <div className="brandCard">
+            <div
+              style={{
+                width: "50px",
+                borderRadius: "50px",
+                marginRight: "20px",
+              }}
+            >
+              <img
+                style={{
+                  width: "100%",
+                  objectFit: "cover",
+                  borderRadius: "50px",
+                }}
+                src="https://assets.simpleviewinc.com/simpleview/image/upload/crm/boulder/sprouts-logo-e4e8d80f5056a36_e4e8d8cf-5056-a36a-071fb0c1945e7c79.png"
+                alt="image"
+              />
             </div>
-            <div className="brandCard">
-              <div style={{width:"50px", borderRadius:"50px", marginRight:"20px"}}>
-                <img style={{width:"100%", objectFit:"cover", borderRadius:"50px"}} src="https://media.licdn.com/dms/image/C560BAQEqg-5hBXz4lw/company-logo_200_200/0/1595613376638?e=2147483647&v=beta&t=SpoLuHLjwNB3EpAlls98d4E3x9_rl4sdUHsbJRbYt4Q" alt="image" />
-              </div>
-              <div>
-                <Heading fontSize={"18px"} fontWeight={"600"}>Mollie stones</Heading>
-                <Text>Delivery with in 24 hrs</Text>
-              </div>
+            <div>
+              <Heading fontSize={"18px"} fontWeight={"600"}>
+                Spouts
+              </Heading>
+              <Text>Delivery with in 24 hrs</Text>
             </div>
-            <div className="brandCard">
-              <div style={{width:"50px", borderRadius:"50px", marginRight:"20px"}}>
-                <img style={{width:"100%", objectFit:"cover", borderRadius:"50px"}} src="https://s3.amazonaws.com/media.locally.net/logo-270x270/2_2016-02-22-10-57-06.gif" alt="image" />
-              </div>
-              <div>
-                <Heading fontSize={"18px"} fontWeight={"600"}>Sports Basement</Heading>
-                <Text>Delivery with in 24 hrs</Text>
-              </div>
+          </div>
+          <div className="brandCard">
+            <div
+              style={{
+                width: "50px",
+                borderRadius: "50px",
+                marginRight: "20px",
+              }}
+            >
+              <img
+                style={{
+                  width: "100%",
+                  objectFit: "cover",
+                  borderRadius: "50px",
+                }}
+                src="https://seeklogo.com/images/G/grocery-outlet-logo-D3B06DC84B-seeklogo.com.png"
+                alt="image"
+              />
             </div>
-            <div className="brandCard">
-              <div style={{width:"50px", borderRadius:"50px", marginRight:"20px"}}>
-                <img style={{width:"100%", objectFit:"cover", borderRadius:"50px"}} src="https://static.ambitionbox.com/assets/v2/images/rs:fit:200:200:false:false/bG9jYWw6Ly8vbG9nb3Mvb3JpZ2luYWxzL3RoZS1jb250YWluZXItc3RvcmUuanBn.webp" alt="image" />
-              </div>
-              <div>
-                <Heading fontSize={"18px"} fontWeight={"600"}>Container Store</Heading>
-                <Text>Delivery with in 24 hrs</Text>
-              </div>
+            <div>
+              <Heading fontSize={"18px"} fontWeight={"600"}>
+                Grosery Outlet
+              </Heading>
+              <Text>Delivery with in 24 hrs</Text>
             </div>
-            <div className="brandCard">
-              <div style={{width:"50px", borderRadius:"50px", marginRight:"20px"}}>
-                <img style={{width:"100%", objectFit:"cover", borderRadius:"50px"}} src="https://corporate.target.com/_media/TargetCorp/Press/B-roll%20and%20Press%20Materials/Logos/Target_Bullseye-Logo_Red.jpg?preset=640w" alt="image" />
-              </div>
-              <div>
-                <Heading fontSize={"18px"} fontWeight={"600"}>Target</Heading>
-                <Text>Delivery with in 24 hrs</Text>
-              </div>
+          </div>
+          <div className="brandCard">
+            <div
+              style={{
+                width: "50px",
+                borderRadius: "50px",
+                marginRight: "20px",
+              }}
+            >
+              <img
+                style={{
+                  width: "100%",
+                  objectFit: "cover",
+                  borderRadius: "50px",
+                }}
+                src="https://media.licdn.com/dms/image/C560BAQEqg-5hBXz4lw/company-logo_200_200/0/1595613376638?e=2147483647&v=beta&t=SpoLuHLjwNB3EpAlls98d4E3x9_rl4sdUHsbJRbYt4Q"
+                alt="image"
+              />
             </div>
-            <div className="brandCard">
-              <div style={{width:"50px", borderRadius:"50px", marginRight:"20px"}}>
-                <img style={{width:"100%", objectFit:"cover", borderRadius:"50px"}} src="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_170,w_170,f_auto,b_white,q_auto:eco,dpr_1/e4fcf7xwnbuzevlchapd" alt="image" />
-              </div>
-              <div>
-                <Heading fontSize={"18px"} fontWeight={"600"}>Bevmo!</Heading>
-                <Text>Delivery with in 24 hrs</Text>
-              </div>
+            <div>
+              <Heading fontSize={"18px"} fontWeight={"600"}>
+                Mollie stones
+              </Heading>
+              <Text>Delivery with in 24 hrs</Text>
             </div>
+          </div>
+          <div className="brandCard">
+            <div
+              style={{
+                width: "50px",
+                borderRadius: "50px",
+                marginRight: "20px",
+              }}
+            >
+              <img
+                style={{
+                  width: "100%",
+                  objectFit: "cover",
+                  borderRadius: "50px",
+                }}
+                src="https://s3.amazonaws.com/media.locally.net/logo-270x270/2_2016-02-22-10-57-06.gif"
+                alt="image"
+              />
+            </div>
+            <div>
+              <Heading fontSize={"18px"} fontWeight={"600"}>
+                Sports Basement
+              </Heading>
+              <Text>Delivery with in 24 hrs</Text>
+            </div>
+          </div>
+          <div className="brandCard">
+            <div
+              style={{
+                width: "50px",
+                borderRadius: "50px",
+                marginRight: "20px",
+              }}
+            >
+              <img
+                style={{
+                  width: "100%",
+                  objectFit: "cover",
+                  borderRadius: "50px",
+                }}
+                src="https://static.ambitionbox.com/assets/v2/images/rs:fit:200:200:false:false/bG9jYWw6Ly8vbG9nb3Mvb3JpZ2luYWxzL3RoZS1jb250YWluZXItc3RvcmUuanBn.webp"
+                alt="image"
+              />
+            </div>
+            <div>
+              <Heading fontSize={"18px"} fontWeight={"600"}>
+                Container Store
+              </Heading>
+              <Text>Delivery with in 24 hrs</Text>
+            </div>
+          </div>
+          <div className="brandCard">
+            <div
+              style={{
+                width: "50px",
+                borderRadius: "50px",
+                marginRight: "20px",
+              }}
+            >
+              <img
+                style={{
+                  width: "100%",
+                  objectFit: "cover",
+                  borderRadius: "50px",
+                }}
+                src="https://corporate.target.com/_media/TargetCorp/Press/B-roll%20and%20Press%20Materials/Logos/Target_Bullseye-Logo_Red.jpg?preset=640w"
+                alt="image"
+              />
+            </div>
+            <div>
+              <Heading fontSize={"18px"} fontWeight={"600"}>
+                Target
+              </Heading>
+              <Text>Delivery with in 24 hrs</Text>
+            </div>
+          </div>
+          <div className="brandCard">
+            <div
+              style={{
+                width: "50px",
+                borderRadius: "50px",
+                marginRight: "20px",
+              }}
+            >
+              <img
+                style={{
+                  width: "100%",
+                  objectFit: "cover",
+                  borderRadius: "50px",
+                }}
+                src="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_170,w_170,f_auto,b_white,q_auto:eco,dpr_1/e4fcf7xwnbuzevlchapd"
+                alt="image"
+              />
+            </div>
+            <div>
+              <Heading fontSize={"18px"} fontWeight={"600"}>
+                Bevmo!
+              </Heading>
+              <Text>Delivery with in 24 hrs</Text>
+            </div>
+          </div>
         </div>
       </div>
 
+      <div style={{ margin: "60px 80px 0px 80px " }}>
+        <Heading fontSize="24px" margin={"0px 0px 36px 0px"}>
+          Get Up To 70% Off
+        </Heading>
 
+        <div className="offerCards">
+           <div style={{width:"23%", borderRadius:"12px", background:"#FFE8E5"}}>
+            <Heading fontSize={"18px"} margin={"16px 18px 0px 18px"}>Save</Heading>
+            <Heading fontSize={"30px"} margin={"2px 18px 0px 18px"} color="#AD564D" >$100</Heading>
+            <Text fontSize={"14px"}  margin={"16px 18px 20px 18px"}>Exploring Our Furniture And home Furnishing Range</Text>
+            <div style={{height:"200px"}}>
+                <img style={{width:"100%",height:"100%" ,objectFit:"cover", borderRadius:"0px 0px 12px 12px"}} src="https://thumbs.dreamstime.com/b/lot-chairs-pink-background-d-render-furniture-mock-color-182221838.jpg" alt="image" />
+            </div>
+           </div>
+           
+           <div style={{width:"23%", borderRadius:"12px", background:"#E1F1FF"}}>
+            <Heading fontSize={"18px"} margin={"16px 18px 0px 18px"}>Save</Heading>
+            <Heading fontSize={"30px"} margin={"2px 18px 0px 18px"} color="#46739A" >$110</Heading>
+            <Text fontSize={"14px"}  margin={"16px 18px 20px 18px"}>Exploring Our Furniture And home Furnishing Range</Text>
+            <div style={{height:"200px"}}>
+                <img style={{width:"100%",height:"100%" ,objectFit:"cover", borderRadius:"0px 0px 12px 12px"}} src="https://t3.ftcdn.net/jpg/00/76/96/36/360_F_76963662_WuX2v8xDTapShA8gNKe6NN51NJfPbmzy.jpg" alt="image" />
+            </div>
+           </div>
+           <div style={{width:"23%", borderRadius:"12px", background:"#FFEEE5"}}>
+            <Heading fontSize={"18px"} margin={"16px 18px 0px 18px"}>Save</Heading>
+            <Heading fontSize={"30px"} margin={"2px 18px 0px 18px"} color="#9E6D51" >$130</Heading>
+            <Text fontSize={"14px"}  margin={"16px 18px 20px 18px"}>Exploring Our Furniture And home Furnishing Range</Text>
+            <div style={{height:"200px"}}>
+                <img style={{width:"100%",height:"100%" ,objectFit:"cover", borderRadius:"0px 0px 12px 12px"}} src="https://img.freepik.com/premium-psd/book-mockup-isolated-soft-color-background_78895-1964.jpg?w=2000" alt="image" />
+            </div>
+           </div>
+           <div style={{width:"23%", borderRadius:"12px", background:"#FFECF1"}}>
+            <Heading fontSize={"18px"} margin={"16px 18px 0px 18px"}>Save</Heading>
+            <Heading fontSize={"30px"} margin={"2px 18px 0px 18px"} color="#A35369" >$40</Heading>
+            <Text fontSize={"14px"}  margin={"16px 18px 20px 18px"}>Exploring Our Furniture And home Furnishing Range</Text>
+            <div style={{height:"200px"}}>
+                <img style={{width:"100%",height:"100%" ,objectFit:"cover", borderRadius:"0px 0px 12px 12px"}} src="https://img.freepik.com/premium-photo/beautiful-girls-bag-pastel-mint-color-pink-background_72402-2380.jpg?w=2000" alt="image" />
+            </div>
+           </div>
+         <div>
 
+         </div>
+        </div>
+      </div>
+     
       <Footer />
     </div>
   );
