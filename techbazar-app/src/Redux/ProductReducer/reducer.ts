@@ -1,5 +1,5 @@
 
-
+//types
 export interface singleProduct {
     id: number,
     title: string,
@@ -9,22 +9,31 @@ export interface singleProduct {
     category: string,
     brand:string
   }
+
+  
 export interface product {
     products:singleProduct[],
     isLoading:false,
     isError:false   
 }
 
-interface act {
+export interface act {
    type:string,
-   payload:any 
+   payload?:any 
 }
 
-const initialState={
+
+
+
+// reducer
+const initialState:product={
     products:[],
     isLoading:false,
     isError:false
 }
+
+
+
 
 export const reducer=(state=initialState,action:act)=>{
 switch(action.type){
