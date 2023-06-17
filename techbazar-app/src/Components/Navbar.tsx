@@ -121,6 +121,7 @@ function Navbar() {
             <Link to="/cart" className="AccountLinks">
               Cart
             </Link>
+
           </div>
         </div>
       </div>

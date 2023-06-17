@@ -19,7 +19,7 @@ import { ViewIcon, ViewOffIcon } from '@chakra-ui/icons';
 import { getuser } from '../Redux/AuthReducer/api';
 import { user } from '../Redux/AuthReducer/reducer';
 import { useLocation, useNavigate } from "react-router-dom";
-export const Login=()=>{
+export const AdminLogin=()=>{
     const dispatch=useDispatch()
     const [showPassword, setShowPassword] = useState(false);
     const [email,setEmail]=useState("")
@@ -31,23 +31,18 @@ export const Login=()=>{
     const handleSubmit=(e:any)=>{
         e.preventDefault()
         dispatch<any>(getuser)
-        if(email && password){
-            for(let i=0; i<userData.length; i++){
-                if(userData[i].email===email && userData[i].password===password){
-                   localStorage.setItem("userName", JSON.stringify(userData[i].name));
-                   navigate("/");
-                        break;
-                }
-              }
-        }else if (!email && !password){
+        if(email==="admin@gmail.com" && password==="admin1234"){
+            navigate("/admin");
+        }
+        else if (!email && !password){
             alert("Please fill all details");
             
         }
-        else{
+        else {
             alert("Wrong Credentials");
         };
-        
     }
+
     return (
         <Flex
             minH={'100vh'}
@@ -56,7 +51,7 @@ export const Login=()=>{
             bg={useColorModeValue('gray.50', 'gray.800')}>
             <Stack spacing={8} mx={'auto'} maxW={'lg'} py={12} px={6}>
                 <Stack align={'center'}>
-                <Heading fontSize={'4xl'}>Sign in to your account</Heading>
+                <Heading fontSize={'4xl'}>Log in to Admin Side</Heading>
                 </Stack>
                 <Box
                 rounded={'lg'}
@@ -70,7 +65,7 @@ export const Login=()=>{
                     </FormControl>
                     <FormControl id="password">
                     <FormLabel>Password</FormLabel>
-                        <InputGroup>
+                    <InputGroup>
                             <Input type={showPassword ? 'text' : 'password'} onChange={(e)=>setPassword(e.target.value)}/>
                                 <InputRightElement h={'full'}>
                                     <Button
