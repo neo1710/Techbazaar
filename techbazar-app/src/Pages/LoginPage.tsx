@@ -6,27 +6,30 @@ import {
     Input,
     Checkbox,
     Stack,
-    Link,
     Button,
     Heading,
     InputGroup,
     InputRightElement,
     useColorModeValue,
+    Text
   } from '@chakra-ui/react';
 import { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { ViewIcon, ViewOffIcon } from '@chakra-ui/icons';
 import { getuser } from '../Redux/AuthReducer/api';
-import { user } from '../Redux/AuthReducer/reducer';
+import { Link } from 'react-router-dom';
 import { useLocation, useNavigate } from "react-router-dom";
+
 export const Login=()=>{
     const dispatch=useDispatch()
     const [showPassword, setShowPassword] = useState(false);
     const [email,setEmail]=useState("")
     const [password,setPassword]=useState("")
+    const location=useLocation()
     const userData=useSelector((store:any)=>store.authReducer.userData)
     const navigate=useNavigate()
     console.log(userData);
+    console.log(location.state);
     
     const handleSubmit=(e:any)=>{
         e.preventDefault()
@@ -35,9 +38,14 @@ export const Login=()=>{
             for(let i=0; i<userData.length; i++){
                 if(userData[i].email===email && userData[i].password===password){
                    localStorage.setItem("userName", JSON.stringify(userData[i].name));
-                   navigate("/");
-                        break;
+                   if(location.state==="/products"){
+                    navigate("/products")
+                   }else{
+                    navigate("/")
+                   }
+                   break;
                 }
+                
               }
         }else if (!email && !password){
             alert("Please fill all details");
@@ -89,7 +97,7 @@ export const Login=()=>{
                         align={'start'}
                         justify={'space-between'}>
                         <Checkbox>Remember me</Checkbox>
-                        <Link color={'blue.400'}>Forgot password?</Link>
+                        <Link to={""} style={{color:'#42a6e9'}}>Forgot password?</Link>
                     </Stack>
                     <Button
                         bg={'#00472F'}
@@ -99,6 +107,12 @@ export const Login=()=>{
                         }} onClick={handleSubmit}>
                         Sign in
                     </Button>
+                    </Stack>
+                    <Stack pt={6}>
+                        <Text align={'center'}>
+                        Don't Have a Account? <Link to={"/signup"} style={{color:'#00472F',fontWeight:"500"}}>SignUp</Link><br />
+                        Already a Admin? <Link to={"/adminlogin"} style={{color:'#00472F',fontWeight:"500"}}>Login as Admin</Link>
+                        </Text>
                     </Stack>
                 </Stack>
                 </Box>
