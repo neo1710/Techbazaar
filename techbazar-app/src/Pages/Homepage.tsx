@@ -10,6 +10,12 @@ import camera from "../Images/camera.svg";
 import pinkHeadphone from "../Images/pinkHeadphone.svg";
 import blackHeadphone from "../Images/blackHeadphone.svg";
 import bottol from "../Images/bottol.svg";
+import blueSpeaker from "../Images/blueSpeaker.svg";
+import greenBuds from "../Images/greenBuds.svg";
+import macBook from "../Images/macBook.svg";
+import mobile from "../Images/mobile.svg";
+import wallet from "../Images/wallet.svg";
+import zebronic from "../Images/zebronic.svg";
 
 export const HomePage = () => {
   return (
@@ -547,7 +553,107 @@ export const HomePage = () => {
          </div>
         </div>
       </div>
+
+      <div className="poster">
+
+        <div className="greeBox">
+          <Heading fontSize={"44px"} marginBottom={"22px"}>Get 5% Cash Back On $200</Heading>
+          <Text fontSize={"18px"}>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad explicabo beatae pariatur laudantium est! Exercitationem, maiores.</Text>
+          <button >Learn More</button>
+        </div>
+      </div>
      
+      <div style={{ margin: "60px 80px 0px 80px" }}>
+        <Heading fontSize="24px" margin={"0px 0px 36px 0px"}>
+          Weekly Populer Products
+        </Heading>
+        <div className="productCards">
+          <HomePageProductsCard
+            image={mobile}
+            price="$20"
+            text="Pink Gold Strap, Free Size"
+            title="HomePod Mini"
+          />
+          <HomePageProductsCard
+            image={zebronic}
+            price="$20"
+            text="Pink Gold Strap, Free Size"
+            title="Smart Watch"
+          />
+          <HomePageProductsCard
+            image={macBook}
+            price="$52.30"
+            text="Pink Gold Strap, Free Size"
+            title="AirPods Max"
+          />
+          <HomePageProductsCard
+            image={greenBuds}
+            price="$10"
+            text="Pink Gold Strap, Free Size"
+            title="Pendletone Water Bottol"
+          />
+          <HomePageProductsCard
+            image={blueSpeaker}
+            price="$61"
+            text="Pink Gold Strap, Free Size"
+            title="Pink Camera"
+          />
+          <HomePageProductsCard
+            image={wallet}
+            price="$11"
+            text="Pink Gold Strap, Free Size"
+            title="Hand Bags Pink"
+          />
+          <HomePageProductsCard
+            image={blackHeadphone}
+            price="$9"
+            text="Pink Gold Strap, Free Size"
+            title="Black & Blue Headphone"
+          />
+          <HomePageProductsCard
+            image={headphoneBuds}
+            price="$20"
+            text="Pink Gold Strap, Free Size"
+            title="Black Headphone Buds"
+          />
+        </div>
+      </div>
+
+
+      <div style={{ margin: "60px 80px 0px 80px " }}>
+        <Heading fontSize="24px" margin={"0px 0px 36px 0px"}>
+          Get Up To 70% Off
+        </Heading>
+
+        <div className="offerCards">
+           <div style={{width:"31%", borderRadius:"12px", background:"#FFE8E5", paddingTop:"22px"}}>
+            <Heading fontSize={"30px"} margin={"2px 18px 0px 18px"} color="#AD564D" >Frequently Asked Questions</Heading>
+            <Text fontSize={"14px"}  margin={"16px 18px 20px 18px"}>Exploring Our Furniture And home Furnishing Range</Text>
+            <div style={{height:"260px"}}>
+                <img style={{width:"100%",height:"100%" ,objectFit:"cover", borderRadius:"0px 0px 12px 12px"}} src="https://thumbs.dreamstime.com/b/lot-chairs-pink-background-d-render-furniture-mock-color-182221838.jpg" alt="image" />
+            </div>
+           </div>
+           
+           <div style={{width:"31%", borderRadius:"12px", background:"#E1F1FF", paddingTop:"22px"}}>
+            <Heading fontSize={"30px"} margin={"2px 18px 0px 18px"} color="#46739A" >Online Payment Process</Heading>
+            <Text fontSize={"14px"}  margin={"16px 18px 20px 18px"}>Exploring Our Furniture And home Furnishing Range</Text>
+            <div style={{height:"260px"}}>
+                <img style={{width:"100%",height:"100%" ,objectFit:"cover", borderRadius:"0px 0px 12px 12px"}} src="https://t3.ftcdn.net/jpg/00/76/96/36/360_F_76963662_WuX2v8xDTapShA8gNKe6NN51NJfPbmzy.jpg" alt="image" />
+            </div>
+           </div>
+           <div style={{width:"31%", borderRadius:"12px", background:"#FFEEE5", paddingTop:"22px"}}>
+            <Heading fontSize={"30px"} margin={"2px 18px 0px 18px"} color="#9E6D51" >$130</Heading>
+            <Text fontSize={"14px"}  margin={"16px 18px 20px 18px"}>Exploring Our Furniture And home Furnishing Range</Text>
+            <div style={{height:"260px"}}>
+                <img style={{width:"100%",height:"100%" ,objectFit:"cover", borderRadius:"0px 0px 12px 12px"}} src="https://img.freepik.com/premium-psd/book-mockup-isolated-soft-color-background_78895-1964.jpg?w=2000" alt="image" />
+            </div>
+           </div>
+         <div>
+         </div>
+        </div>
+      </div>
+
+
       <Footer />
     </div>
   );
