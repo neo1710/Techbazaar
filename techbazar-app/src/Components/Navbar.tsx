@@ -59,7 +59,7 @@ console.log(isAtTop)
            
            <div className='Account'>
             <div>
-            <FontAwesomeIcon icon={faUser} size="sm"/> <Link to="/signup" className='AccountLinks'>Account</Link>
+            <FontAwesomeIcon icon={faUser} size="sm"/> <Link to="/login" className='AccountLinks'>Account</Link>
             </div>
             <div>
             <FontAwesomeIcon icon={faCartShopping} size="sm" /> <Link to="/cart" className='AccountLinks'>Cart</Link>

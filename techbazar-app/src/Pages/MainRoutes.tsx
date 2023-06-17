@@ -6,11 +6,13 @@ import { CartPage } from './CartPage'
 import { Signup } from './SignupPage'
 import { AdminSide } from './AdminSide'
 import { AdminLogin } from './AdminLogin'
+import PrivateRoute from '../Components/PrivateRouter'
+
 export const MainRoutes=()=>{
    return (
     <Routes>
    <Route path='/' element={<HomePage/>}/>
-   <Route path='/products' element={<ProductPage/>}/>
+   <Route path='/products' element={<PrivateRoute><ProductPage/></PrivateRoute> }/>
    <Route path='/login' element={<Login/>}/>
    <Route path='/signup' element={<Signup/>} />
    <Route path='/cart' element={<CartPage/>}/>
