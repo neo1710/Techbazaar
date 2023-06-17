@@ -37,7 +37,6 @@ export const Signup=()=>{
       setName("")
       setEmail("")
       setpassword("")
-      
     }
     
     return(
