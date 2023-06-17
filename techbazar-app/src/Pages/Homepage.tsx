@@ -10,6 +10,12 @@ import camera from "../Images/camera.svg";
 import pinkHeadphone from "../Images/pinkHeadphone.svg";
 import blackHeadphone from "../Images/blackHeadphone.svg";
 import bottol from "../Images/bottol.svg";
+import blueSpeaker from "../Images/blueSpeaker.svg";
+import greenBuds from "../Images/greenBuds.svg";
+import macBook from "../Images/macBook.svg";
+import mobile from "../Images/mobile.svg";
+import wallet from "../Images/wallet.svg";
+import zebronic from "../Images/zebronic.svg";
 
 export const HomePage = () => {
   return (
@@ -547,7 +553,71 @@ export const HomePage = () => {
          </div>
         </div>
       </div>
+
+      <div className="poster">
+
+        <div className="greeBox">
+          <Heading fontSize={"44px"} marginBottom={"20px"}>Get 5% Cash Back On $200</Heading>
+          <Text fontSize={"18px"}>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad explicabo beatae pariatur laudantium est! Exercitationem, maiores.</Text>
+          <button >Learn More</button>
+        </div>
+      </div>
      
+      <div style={{ margin: "60px 80px 0px 80px" }}>
+        <Heading fontSize="24px" margin={"0px 0px 36px 0px"}>
+          Weekly Populer Products
+        </Heading>
+        <div className="productCards">
+          <HomePageProductsCard
+            image={mobile}
+            price="$20"
+            text="Pink Gold Strap, Free Size"
+            title="HomePod Mini"
+          />
+          <HomePageProductsCard
+            image={zebronic}
+            price="$20"
+            text="Pink Gold Strap, Free Size"
+            title="Smart Watch"
+          />
+          <HomePageProductsCard
+            image={macBook}
+            price="$52.30"
+            text="Pink Gold Strap, Free Size"
+            title="AirPods Max"
+          />
+          <HomePageProductsCard
+            image={greenBuds}
+            price="$10"
+            text="Pink Gold Strap, Free Size"
+            title="Pendletone Water Bottol"
+          />
+          <HomePageProductsCard
+            image={blueSpeaker}
+            price="$61"
+            text="Pink Gold Strap, Free Size"
+            title="Pink Camera"
+          />
+          <HomePageProductsCard
+            image={wallet}
+            price="$11"
+            text="Pink Gold Strap, Free Size"
+            title="Hand Bags Pink"
+          />
+          <HomePageProductsCard
+            image={blackHeadphone}
+            price="$9"
+            text="Pink Gold Strap, Free Size"
+            title="Black & Blue Headphone"
+          />
+          <HomePageProductsCard
+            image={headphoneBuds}
+            price="$20"
+            text="Pink Gold Strap, Free Size"
+            title="Black Headphone Buds"
+          />
+        </div>
+      </div>
       <Footer />
     </div>
   );
