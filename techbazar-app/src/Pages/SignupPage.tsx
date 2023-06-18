@@ -33,11 +33,11 @@ export const Signup=()=>{
     }
     const handleSubmit=()=>{
       dispatch<any>(adduser(newUser));
+      alert("Successfully Added your Account")
       navigate("/login")
       setName("")
       setEmail("")
       setpassword("")
-      
     }
     
     return(

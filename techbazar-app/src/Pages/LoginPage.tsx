@@ -37,12 +37,13 @@ export const Login=()=>{
         if(email && password){
             for(let i=0; i<userData.length; i++){
                 if(userData[i].email===email && userData[i].password===password){
-                   localStorage.setItem("userName", JSON.stringify(userData[i].name));
+                   localStorage.setItem("userName", JSON.stringify(userData[i].name,userData[i].password));
                    if(location.state==="/products"){
                     navigate("/products")
                    }else{
                     navigate("/")
                    }
+                   alert("Login Successfully")
                    break;
                 }
                 
