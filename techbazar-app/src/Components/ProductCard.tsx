@@ -1,13 +1,17 @@
 import react from "react"
 import { singleProduct } from "../Redux/ProductReducer/reducer"
 import styled from "@emotion/styled";
+import { useNavigate } from "react-router-dom";
 
 
 export const ProductCard=({id,title,image,description,price,category,brand}:singleProduct)=>{
+const navigate=useNavigate();
 
-
+function nav(){
+   navigate(`/products/${id}`);
+}
    return (
-    <DIV>
+    <DIV onClick={nav}>
         <img src={image} alt="" />
         <h3>{title}</h3>
         <h3>{price}</h3>
