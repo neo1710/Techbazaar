@@ -14,7 +14,7 @@ function nav(){
     <DIV onClick={nav}>
         <img src={image} alt="" />
         <h3>{title}</h3>
-        <h3>{price}</h3>
+        <h3>₹{price}</h3>
         <button className="cart_btn">Add to Cart</button>
     </DIV>
    ) 
@@ -22,12 +22,17 @@ function nav(){
 
 const DIV=styled.div`
  width :100% ;
+ padding: 5px;
 img{
-width : 80%;
+height: 250px;
 }
 .cart_btn{
    background-color :#00472F ;
-   color:white
+   color:white;
+   width: 40%;
+}
+.cart_btn:hover{
+   background-color: gray;
 }
 box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 `

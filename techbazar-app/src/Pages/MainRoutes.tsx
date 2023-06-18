@@ -6,10 +6,9 @@ import { CartPage } from './CartPage'
 import { Signup } from './SignupPage'
 import { AdminSide } from './AdminSide'
 import { AdminLogin } from './AdminLogin'
-
 import { SingleProductPage } from './SingleProductPage'
-
 import PrivateRoute from '../Components/PrivateRouter'
+
 
 
 export const MainRoutes=()=>{

@@ -169,7 +169,7 @@ import { Box, Button, Table, Thead, Tbody, Tr, Th, Td } from '@chakra-ui/react';
 
 interface Product {
   id: number;
-  name: string;
+  title: string;
   description: string;
   price: number;
 }
@@ -230,7 +230,7 @@ const SeeProductPage: React.FC = () => {
         <Tbody>
           {products.map((product) => (
             <Tr key={product.id}>
-              <Td>{product.name}</Td>
+              <Td>{product.title}</Td>
               <Td>{product.description}</Td>
               <Td>{product.price}</Td>
               <Td>

@@ -36,8 +36,10 @@ dispatch<any>(getData(param));
 ))
 }
 </div><br />
+<br /><br />
 <div className="pagi">
-            <button disabled={page===1?true:false} onClick={()=>{setPage(page-1)}}>Prev</button><button>{page}</button><button onClick={()=>{setPage(page+1)}}>Next</button>
+            <button className="page" disabled={page===1?true:false} onClick={()=>{setPage(page-1)}}>Prev</button>
+            <button className="page">{page}</button><button className="page" onClick={()=>{setPage(page+1)}}>Next</button>
         </div>
     </DIV>
    ) 
@@ -60,9 +62,13 @@ margin-bottom:10px;
    margin:auto;
    margin-top:10px;
 }
-button{
+.page{
    background-color: #00472F;
    color:white;
+   width: 30%;
+}
+.page:hover{
+   background-color: gray;
 }
 `
 // https://happy-blue-lab-coat.cyclic.app/
