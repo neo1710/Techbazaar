@@ -115,6 +115,7 @@ function Navbar() {
             <Link to="/login" className="AccountLinks">
               Account
             </Link>
+
           </div>
           <div>
             <FontAwesomeIcon icon={faCartShopping} size="sm" />{" "}

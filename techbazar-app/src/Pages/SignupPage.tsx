@@ -37,7 +37,6 @@ export const Signup=()=>{
       setName("")
       setEmail("")
       setpassword("")
-      
     }
     
     return(
@@ -99,8 +98,7 @@ export const Signup=()=>{
               </Stack>
               <Stack pt={6}>
                 <Text align={'center'}>
-                  Already a user? <Link to={"/login"} style={{color:'#00472F',fontWeight:"500"}}>Login</Link><br />
-                  <Link to={"/adminlogin"} style={{color:'#00472F',fontWeight:"500"}}>Login as Admin</Link>
+                  Already a user? <Link to={"/login"} style={{color:'#00472F',fontWeight:"500"}}>Login</Link>
                 </Text>
               </Stack>
             </Stack>

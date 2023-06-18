@@ -284,3 +284,39 @@
   width: 100%;
   align-items: center;
 }
+
+.poster{
+  background-image: url("https://www.home-designing.com/wp-content/uploads/2010/10/Green-paint-color-modern-living-room.jpg");
+  height: 650px;
+  display: flex;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  margin-top: 80px;
+}
+
+.greeBox{
+  padding: 50px;
+  margin-left: 900px;
+  box-sizing: border-box;
+  background-color: #00472f;
+  color: #fff;
+  width: 500px;
+}
+
+.greeBox >button{
+  margin-top: 36px;
+  padding: 8px 22px 8px 22px;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  font-weight: 600;
+  border-radius: 50px;
+  transition: 0.5s;
+}
+.greeBox >button:hover{
+  border: 2px solid #36a480;
+  color: #80d5b9;
+  transition: 0.5s;
+}
