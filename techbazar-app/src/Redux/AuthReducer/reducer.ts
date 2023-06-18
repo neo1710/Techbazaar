@@ -28,6 +28,8 @@ export type Action={
         switch (type) {
             case "Login_Request":
                 return {...state,isLoading:true}
+                case "LOGOUT_REQ":
+                return {...state,isAuth:false}
             case "Login_Success":
                 return {...state,isLoading:false,isAuth:true,userData:payload}
             case "Signup_Success":

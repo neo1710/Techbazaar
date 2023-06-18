@@ -1,3 +1,4 @@
+
 import react from "react"
 import  {legacy_createStore,applyMiddleware} from "redux"
 import { reducer as productReducer } from "./ProductReducer/reducer"
@@ -10,3 +11,4 @@ productReducer,authReducer
 })
 
 export const store= legacy_createStore(rootReducer,applyMiddleware(thunk));
+
