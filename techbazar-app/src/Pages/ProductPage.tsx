@@ -2,6 +2,7 @@ import styled from "@emotion/styled"
 import Navbar from "../Components/Navbar"
 import { ProductList } from "../Components/ProductList"
 import { ProductFilters } from "../Components/ProductFilters"
+import Footer from "../Components/Footer"
 
 export const ProductPage=()=>{
 
@@ -14,7 +15,7 @@ export const ProductPage=()=>{
 
 <ProductList/>
 
-
+<Footer/>
 </DIV>
     )
 }
