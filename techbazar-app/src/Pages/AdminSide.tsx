@@ -1,7 +1,12 @@
+import AdminPage from "./AdminPage"
+import SeeProductPage from "./SeeProductPage"
 
 export const AdminSide=()=>{
 
     return (
-        <div>Admin</div>
+        <div>
+            <AdminPage/>
+            <SeeProductPage/>
+        </div>
     )
 }

@@ -30,12 +30,7 @@ setData(res.data);
     <h3 className="price">₹{data?.price}</h3>
     <h4>{data?.category}</h4>
     <h4>{data?.brand}</h4><br />
-   <label className="c">Select Color</label>
-    <div className="ron">
-        <div className="black"></div>
-        <div className="white"></div>
-        <div className="grey"></div>
-</div><br />
+
 
 <button >Add to cart</button>
 
@@ -82,6 +77,7 @@ background-color: grey;
     background-color: #00472F;
     color: white;
     border-radius: 30% 0%;
+    width: 20%;
   }
   .ron{
     display: flex;
