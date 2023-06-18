@@ -1,3 +1,6 @@
+
+export {};
+
 import { Route, Routes } from 'react-router-dom'
 import { HomePage } from './Homepage'
 import { ProductPage } from './ProductPage'
@@ -26,3 +29,4 @@ export const MainRoutes=()=>{
     </Routes>
    ) 
 }
+
