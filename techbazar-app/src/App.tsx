@@ -76,12 +76,20 @@
 
 
 import React from 'react';
+
 import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
 import AdminPage from './AdminPage';
 import SeeProductPage from './SeeProductPage';
 
+import logo from './logo.svg';
+import './App.css';
+import { HomePage } from './Pages/Homepage';
+import { MainRoutes } from './Pages/MainRoutes';
+
+
 const App: React.FC = () => {
   return (
+
     <Router>
       <nav>
         <ul>
@@ -98,6 +106,11 @@ const App: React.FC = () => {
         <Route path="/products" element={<SeeProductPage />} />
       </Routes>
     </Router>
+
+    <div className="App">
+      <MainRoutes/>
+    </div>
+
   );
 };
 
