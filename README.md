@@ -1,6 +1,11 @@
 # -remarkable-ic
 
 # Techbazar
+-  https://techbazar-app.vercel.app
+
+# About
+
+-TECHBAZAAR is an e-commerce web site for tech related products, designed to provide a user experience.
 
 # Overview
 
