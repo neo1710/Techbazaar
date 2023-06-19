@@ -8,6 +8,7 @@ import { AdminSide } from './AdminSide'
 import { AdminLogin } from './AdminLogin'
 import { SingleProductPage } from './SingleProductPage'
 import PrivateRoute from '../Components/PrivateRouter'
+import Checkout from './CheckoutPage'
 
 
 
@@ -21,6 +22,7 @@ export const MainRoutes=()=>{
    <Route path='/cart' element={<CartPage/>}/>
    <Route path='/admin' element={<AdminSide/>} />
    <Route path='/adminlogin' element={<AdminLogin />} />
+   <Route path='/checkout' element={<Checkout/>} />
    <Route path='/products/:id' element={<SingleProductPage/>}/>
     </Routes>
    ) 
