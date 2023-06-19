@@ -195,7 +195,7 @@ const SeeProductPage: React.FC = () => {
     };
 
     fetchProducts();
-  }, []);
+  }, [products]);
 
   const handleDeleteProduct = async (productId: number) => {
     try {
@@ -216,7 +216,7 @@ const SeeProductPage: React.FC = () => {
   };
 
   return (
-    <Box>
+    <Box  margin={'80px 80px 0px 80px'}>
       <h2>Products</h2>
       <Table variant="striped" colorScheme="teal">
         <Thead>
