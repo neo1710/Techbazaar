@@ -175,7 +175,7 @@ const AdminPage: React.FC = () => {
   };
 
   return (
-    <Box>
+    <Box margin={'80px 80px 0px 80px'}>
       <Heading as="h2" mb={4}>Add Product</Heading>
       <form onSubmit={handleFormSubmit}>
         <FormControl>

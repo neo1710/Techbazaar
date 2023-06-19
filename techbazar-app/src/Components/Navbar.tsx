@@ -13,7 +13,7 @@ import {} from "@fortawesome/free-brands-svg-icons";
 import { Link, NavLink } from "react-router-dom";
 import Logo from "../Images/Logo.png";
 import { useDispatch, useSelector } from "react-redux";
-import Swal from 'sweetalert2'
+import Swal from 'sweetalert2';
 import {
   Alert,
   AlertIcon,
