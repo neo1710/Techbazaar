@@ -5,6 +5,7 @@ import { CartCard } from "../Components/cartCard";
 import styled from "@emotion/styled";
 import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
+import { Link } from "react-router-dom";
 
 export const CartPage=()=>{
 const [cart,setCart]=useState<cartItem[]|[]>([]);
@@ -89,7 +90,7 @@ function incButton(id:number){
           <div><h2>Discount: 0%</h2></div> 
          <div> <h2>Dilivery Charge: Free</h2></div>       
         <div><h2>Total Amout:{Total}</h2></div> 
-        <div><button className="checkout">Place your order</button></div>
+        <div><Link to={"/checkout"}><button className="checkout">Place your order</button></Link></div>
     </div>
 </div>
 </div>
