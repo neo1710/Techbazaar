@@ -24,7 +24,7 @@ category: "",
 brand:""});
 
 useEffect(()=>{
-axios.get(`https://happy-blue-lab-coat.cyclic.app/products/${id}`).then((res)=>{
+axios.get(`https://techbazaar.onrender.com/products/${id}`).then((res)=>{
 setData(res.data);
 })
 
@@ -32,7 +32,7 @@ setData(res.data);
 
 function addToCart(){
 const dat:cartItem={quantity:1,...data};
-axios.post(`https://happy-blue-lab-coat.cyclic.app/Carts`,dat).then((res)=>{
+axios.post(`https://techbazaar.onrender.com/Carts`,dat).then((res)=>{
 
 }).catch((err)=>{
  console.log(err); 
