@@ -6,7 +6,7 @@ export type disType=(args:Action)=>Action
 
 export const getuser=(dispatch:disType)=>{
    dispatch({type:Login_Request})
-   axios.get(`https://happy-blue-lab-coat.cyclic.app/Users`).then((res)=>{
+   axios.get(`https://techbazaar.onrender.com/Users`).then((res)=>{
       dispatch({type:Login_Success,payload:res.data as any})
    })
    .catch((err)=>{
@@ -18,7 +18,7 @@ export const getuser=(dispatch:disType)=>{
 
 export const adduser=(newUser:user)=>(dispatch:disType)=>{
    dispatch({type:Login_Request})
-    axios.post(`https://happy-blue-lab-coat.cyclic.app/Users`,newUser).then((res)=>{
+    axios.post(`https://techbazaar.onrender.com/Users`,newUser).then((res)=>{
       dispatch({type:Signup_Success,payload:res.data as any})
     })
     .catch((err)=>{

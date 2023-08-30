@@ -12,7 +12,7 @@ const [cart,setCart]=useState<cartItem[]|[]>([]);
 const [Total,setTotal]=useState<number>(0);
 
 function getProduct(){
-    axios.get(`https://happy-blue-lab-coat.cyclic.app/Carts`).then((res)=>{
+    axios.get(`https://techbazaar.onrender.com/Carts`).then((res)=>{
 setCart(res.data);
 }).catch((err)=>{
 console.log(err)

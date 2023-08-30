@@ -18,6 +18,7 @@ function nav(){
 }
    return (
     <DIV onClick={nav}>
+        <div className="card">
         <img src={image} alt="" />
         <h3>{title}</h3>
         <h3>₹{price}</h3>
@@ -26,6 +27,7 @@ function nav(){
          <AlertIcon/>
          Added to cart
          </Alert>}
+        </div>
     </DIV>
    ) 
 }
@@ -33,16 +35,32 @@ function nav(){
 const DIV=styled.div`
  width :100% ;
  padding: 5px;
-img{
-height: 250px;
+ img{
+height: 200px;
+margin: auto;
 }
 .cart_btn{
    background-color :#00472F ;
    color:white;
    width: 40%;
+   padding: 5px;
+   margin-bottom: 10px;
+   border-radius: 10px;
+   box-shadow: #00472F 0px 5px 15px;
+
 }
 .cart_btn:hover{
    background-color: gray;
 }
-box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+.card{
+   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+   padding: 5px;
+   border-radius: 20px;
+}
+.card:hover{
+   transform: scale(1.1);
+   cursor: pointer;
+   transition: 0.2s ease-in-out;
+}
+text-align:center;
 `

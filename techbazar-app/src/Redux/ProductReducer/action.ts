@@ -8,7 +8,7 @@ export type disType=(args:act)=>act
 export const getData=(param:any)=>(dispatch:disType)=>{
 dispatch({type:REQUEST});
 
-axios.get(`https://happy-blue-lab-coat.cyclic.app/products`,param).then((res)=>{
+axios.get(`https://techbazaar.onrender.com/products`,param).then((res)=>{
 dispatch({type:GET_SUCCESS,payload:res.data as any});
 }).catch((err)=>{
     dispatch({type:FAILED})

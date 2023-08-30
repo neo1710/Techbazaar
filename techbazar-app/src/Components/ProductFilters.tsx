@@ -34,7 +34,7 @@ setSearchparams(params);
             </select>
 
             <select value={brand} onChange={(e)=>{setBrand(e.target.value)}}>
-                <option value="">Select brand</option>
+                <option value="">Select Laptops brand</option>
                 <option value="HP">HP</option>
                 <option value="ASUS">ASUS</option>
                 <option value="Lenovo">Lenovo</option>
