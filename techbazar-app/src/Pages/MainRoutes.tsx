@@ -16,7 +16,7 @@ export const MainRoutes=()=>{
    return (
     <Routes>
    <Route path='/' element={<HomePage/>}/>
-   <Route path='/products' element={<ProductPage/> }/>
+   <Route path='/products' element={<PrivateRoute><ProductPage/></PrivateRoute> }/>
    <Route path='/login' element={<Login/>}/>
    <Route path='/signup' element={<Signup/>} />
    <Route path='/cart' element={<PrivateRoute><CartPage/></PrivateRoute>}/>

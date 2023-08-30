@@ -37,7 +37,7 @@ export const Login=()=>{
         if(email && password){
             for(let i=0; i<userData.length; i++){
                 if(userData[i].email===email && userData[i].password===password){
-                   localStorage.setItem("userName", JSON.stringify(userData[i].name));
+                   localStorage.setItem("userName",userData[i].name);
                    if(location.state==="/products"){
                     console.log(location.state)
                     navigate("/products")

@@ -95,7 +95,6 @@
   font-size: 18px;
   display: flex;
   justify-content: space-between;
-  width: 180px;
   font-weight: 600;
 }
 .AccountLinks:hover {
