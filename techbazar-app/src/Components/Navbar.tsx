@@ -20,12 +20,12 @@ import {
   AlertTitle,
   AlertDescription,
 } from '@chakra-ui/react'
-
+import { Text } from "@chakra-ui/react";
 function Navbar() {
   const [isAtTop, setIsAtTop] = useState<Boolean>(false);
   const {isAuth}=useSelector((store:any)=>store.authReducer)
   const dispatch = useDispatch()
-
+  const name=JSON.parse(localStorage.getItem("userName")||"")
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
@@ -132,7 +132,10 @@ function Navbar() {
             dispatch({type:"LOGOUT_REQ"})
             
           }}>
+            
+            <Text style={{color:"black"}}><FontAwesomeIcon icon={faUser} size="sm" />{" "}{name}</Text>
             <FontAwesomeIcon icon={faArrowRightFromBracket} size="sm" />{" "}
+            
             <Link to="" className="AccountLinks">
               Logout
             </Link>

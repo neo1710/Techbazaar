@@ -19,7 +19,7 @@ export const MainRoutes=()=>{
    <Route path='/products' element={<PrivateRoute><ProductPage/></PrivateRoute> }/>
    <Route path='/login' element={<Login/>}/>
    <Route path='/signup' element={<Signup/>} />
-   <Route path='/cart' element={<CartPage/>}/>
+   <Route path='/cart' element={<PrivateRoute><CartPage/></PrivateRoute>}/>
    <Route path='/admin' element={<AdminSide/>} />
    <Route path='/adminlogin' element={<AdminLogin />} />
    <Route path='/checkout' element={<Checkout/>} />

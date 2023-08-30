@@ -38,8 +38,9 @@ dispatch<any>(getData(param));
 </div><br />
 <br /><br />
 <div className="pagi">
-            <button className="page" disabled={page===1?true:false} onClick={()=>{setPage(page-1)}}>Prev</button>
-            <button className="page">{page}</button><button className="page" onClick={()=>{setPage(page+1)}}>Next</button>
+            <button className="page" disabled={page===1} onClick={()=>{setPage(page-1)}}>Prev</button>
+            <button className="page">{page}</button>
+            <button className="page"  disabled={page===4} onClick={()=>{setPage(page+1)}}>Next</button>
         </div>
     </DIV>
    ) 
@@ -47,13 +48,13 @@ dispatch<any>(getData(param));
 
 const DIV=styled.div`
 width: 100%;
+
 .list{
 display: grid;
 grid-template-columns: repeat(4,1fr);
 width:90%;
 gap:5%;
 margin: auto;
-margin-bottom:10px;
 }
 .pagi{
    display: flex;
@@ -66,6 +67,8 @@ margin-bottom:10px;
    background-color: #00472F;
    color:white;
    width: 30%;
+   border-radius: 10px;
+   box-shadow: #00472F 0px 5px 10px;
 }
 .page:hover{
    background-color: gray;
