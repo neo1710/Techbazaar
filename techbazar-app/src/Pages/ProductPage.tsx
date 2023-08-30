@@ -24,7 +24,6 @@ export const ProductPage=()=>{
 
 
 const DIV=styled.div`
-font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 .banner{
     width: 100%;
 }

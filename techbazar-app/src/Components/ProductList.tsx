@@ -73,5 +73,27 @@ margin: auto;
 .page:hover{
    background-color: gray;
 }
+@media all and  (min-width:751) {
+        .list{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap: 6px;
+        }
+        
+    }
+    @media screen and (min-width: 451px) and (max-width:750px) {
+        .list{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 6px;
+        }
+    }
+    @media screen and (max-width: 450px) {
+        .list{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: 6px;
+        }
+    }
 `
 // https://happy-blue-lab-coat.cyclic.app/

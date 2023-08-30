@@ -19,6 +19,8 @@ import {
   AlertIcon,
   AlertTitle,
   AlertDescription,
+  Flex,
+  Spacer,
 } from '@chakra-ui/react'
 import { Text } from "@chakra-ui/react";
 function Navbar() {
@@ -26,6 +28,7 @@ function Navbar() {
   const {isAuth}=useSelector((store:any)=>store.authReducer)
   const dispatch = useDispatch()
   const name=JSON.parse(localStorage.getItem("userName")||"")
+  const count=JSON.parse(localStorage.getItem("count")||"")
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
@@ -149,11 +152,12 @@ function Navbar() {
           }
           
           <div>
-            <FontAwesomeIcon icon={faCartShopping} size="sm" />{" "}
-            <Link to="/cart" className="AccountLinks">
-              Cart
+            <Link to="/cart" className="AccountLinks"><Text  border={"1px solid"} width={6} bgColor={"#00472F"} color={"white"} textAlign={"center"} margin={"auto"} borderRadius={"full"}>{count}</Text>
+            <FontAwesomeIcon  icon={faCartShopping} size="lg" />{"Carts"}
             </Link>
-
+            
+            
+            
           </div>
         </div>
       </div>
