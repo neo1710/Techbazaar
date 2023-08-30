@@ -161,7 +161,8 @@ const DIV = styled.div`
   }
   .details > p {
     font-size: 16px;
-    margin:10px 0px 10px 0px;
+    margin:10px 0px 10px 0px
+    
   }
   .details > h3 {
     font-size: 22px;
