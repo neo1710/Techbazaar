@@ -24,7 +24,7 @@ category: "",
 brand:""});
 
 useEffect(()=>{
-axios.get(`https://happy-blue-lab-coat.cyclic.app/products/${id}`).then((res)=>{
+axios.get(`https://techbazaar.onrender.com/products/${id}`).then((res)=>{
 setData(res.data);
 })
 
@@ -32,7 +32,7 @@ setData(res.data);
 
 function addToCart(){
 const dat:cartItem={quantity:1,...data};
-axios.post(`https://happy-blue-lab-coat.cyclic.app/Carts`,dat).then((res)=>{
+axios.post(`https://techbazaar.onrender.com/Carts`,dat).then((res)=>{
 
 }).catch((err)=>{
  console.log(err); 
@@ -58,11 +58,10 @@ setAlert(true)
 <div className="details">
     <h3>{data?.description}</h3>
     <h3 className="price">₹{data?.price}</h3>
-    <h4>{data?.category}</h4>
-    <h4>{data?.brand}</h4><br />
+    <h4>{data?.title}</h4><br />
 
 
-<button onClick={addToCart} >Add to cart</button>
+<button className="btn" onClick={addToCart} >Add to cart</button>
 
 </div>
 </div><br />
@@ -88,7 +87,6 @@ setAlert(true)
 
 const DIV=styled.div`
 width: 100%;
-font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 .structure{
 width: 90%;
 margin: auto;
@@ -98,30 +96,44 @@ justify-content: space-around;
   .image{
     width: 50%;
 margin-top:100px;
-background-color: grey;
-  } 
+text-align:center;
+margin-bottom:10px;
+border: 1px solid white;
+box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  }
+  .image:hover{
+    transform:scale(1.03);
+    transition:0.2s ease-in-out
+  }
   .image > img{
-    width: 90%;
+    width: 50%;
     margin: auto;
     margin-bottom: 10px;
   } 
   .details{
-    margin-top: 100px;
-   
+    margin-top: 12%;
+   font-size:25px;
     width: 40%;
+    padding:10px
   }
   .title{
     font-size: larger;
+    margin-top:50px
+  }
+  .btn{
+    padding: 10px;
+    width:200px
   }
   .price{
    color :green ;
-   font-size: large;
+   font-size: 25px;
   }
   button{
     background-color: #00472F;
     color: white;
-    border-radius: 30% 0%;
+    border-radius: 10px;
     width: 20%;
+    box-shadow: #00472F 0px 5px 15px;
   }
   button:hover{
 background-color: grey;
@@ -166,6 +178,9 @@ background-color: grey;
 .sim > div{
 width: 20%;
 box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+text-align:center;
+margin:auto
+
 }
 .sim > div > img{
  height :200px ;

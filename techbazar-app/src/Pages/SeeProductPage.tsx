@@ -180,7 +180,7 @@ const SeeProductPage: React.FC = () => {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const response = await fetch('https://happy-blue-lab-coat.cyclic.app/products');
+        const response = await fetch('https://techbazaar.onrender.com/products');
         const data = await response.json();
 
         if (response.ok) {
@@ -199,7 +199,7 @@ const SeeProductPage: React.FC = () => {
 
   const handleDeleteProduct = async (productId: number) => {
     try {
-      const response = await fetch(`https://happy-blue-lab-coat.cyclic.app/products/${productId}`, {
+      const response = await fetch(`https://techbazaar.onrender.com/products/${productId}`, {
         method: 'DELETE',
       });
 
