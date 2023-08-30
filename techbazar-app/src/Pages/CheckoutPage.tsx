@@ -35,6 +35,7 @@ import { useNavigate } from 'react-router-dom';
     const [Edate,setEdate]=useState("")
     const [Eyear,setEyear]=useState("")
     const [CVV,setCVV]=useState("")
+    
   const handleOrder=(e:any)=>{
     e.preventDefault()
     if(name==""||Lname==""||address==""||pincode==""||city==""||country==""||Cnumber==""||Cname==""||Edate==""||Eyear==""||CVV===""){
