@@ -150,6 +150,7 @@ const DIV = styled.div`
   .details {
     margin-top: 4%;
     font-size: 22px;
+    
     width: 45%;
     padding: 10px;
   }
